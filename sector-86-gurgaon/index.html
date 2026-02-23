@@ -415,7 +415,7 @@
 
                         <div class="col-lg-12 form-group">
                            <div class="advanced-button">
-                              <button class="header_phone theme_button" id="SubmitQuerytop" type="submit">GET CALL
+                              <button class="header_phone theme_button form1-submit-btn" id="SubmitQuerytop" type="submit">GET CALL
                                  BACK</button>
                               <input autocomplete="off" id="PROJECT" name="mx_Project_Name" maxlength="200"
                                  type="hidden" value="Emaar Sector 86">
@@ -628,7 +628,7 @@
 
                               <div class="col-lg-12 form-group">
                                  <div class="advanced-button">
-                                    <button class="header_phone theme_button" id="SubmitQuerytop" type="submit">GET
+                                    <button class="header_phone theme_button form1-submit-btn" id="SubmitQuerytop" type="submit">GET
                                        CALL BACK</button>
                                     <input autocomplete="off" id="PROJECT" name="mx_Project_Name" maxlength="200"
                                        type="hidden" value="Emaar Sector 86">
@@ -973,7 +973,7 @@
 
                                  <div class="col-lg-12 form-group">
                                     <div class="advanced-button">
-                                       <button class="header_phone theme_button" id="SubmitQuerytop" type="submit">GET
+                                       <button class="header_phone theme_button form1-submit-btn" id="SubmitQuerytop" type="submit">GET
                                           CALL BACK</button>
                                        <input autocomplete="off" id="PROJECT" name="mx_Project_Name" maxlength="200"
                                           type="hidden" value="Emaar Sector 86">
@@ -1182,7 +1182,7 @@
 
                   <div class="col-lg-12 form-group">
                      <div class="advanced-button">
-                        <button class="header_phone theme_button" id="SubmitQuerytop" type="submit">GET
+                        <button class="header_phone theme_button form1-submit-btn" id="SubmitQuerytop" type="submit">GET
                            CALL BACK</button>
                         <input autocomplete="off" id="PROJECT" name="mx_Project_Name" maxlength="200" type="hidden"
                            value="Emaar Sector 86">
@@ -1969,7 +1969,7 @@
 
                               <div class="col-lg-12 form-group">
                                  <div class="advanced-button">
-                                    <button class="header_phone theme_button" id="SubmitQuerytop" type="submit">GET
+                                    <button class="header_phone theme_button form1-submit-btn" id="SubmitQuerytop" type="submit">GET
                                        CALL BACK</button>
                                     <input autocomplete="off" id="PROJECT" name="mx_Project_Name" maxlength="200"
                                        type="hidden" value="Emaar Sector 86">
@@ -2040,7 +2040,6 @@
 
    <script src="js/custom.js"></script>
    <script>
-
       document.querySelectorAll('.form1').forEach(form => {
          form.addEventListener('submit', function (e) {
             e.preventDefault();
@@ -2057,11 +2056,11 @@
             })
                .then(r => r.json())
                .then(() => {
-                  // Always redirect (even if CRM failed)
+                  
                   window.location.href = 'thank-you.html';
                })
                .catch(() => {
-                  // Network / server issue → still redirect
+                 
                   window.location.href = 'thank-you.html';
                });
          });
